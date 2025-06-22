@@ -1,0 +1,7 @@
+.env
+postgres_data/
+
+*.log
+*.out
+
+.vscode/
