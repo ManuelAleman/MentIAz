@@ -33,7 +33,7 @@ public class AuthService {
         return new AuthResponse(user.getId(), user.getUsername(), user.getEmail(), token);
     }
 
-      public AuthResponse login(LoginRequest request) {
+    public AuthResponse login(LoginRequest request) {
         User user = userRepository.findByEmail(request.getEmail())
             .orElseThrow(() -> new RuntimeException("Invalid credentials"));
 
